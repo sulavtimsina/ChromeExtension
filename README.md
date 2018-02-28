@@ -2,3 +2,5 @@
 <p>&nbsp;</p>
 <p><strong>Please help this repository grow.</strong></p>
 <p>&nbsp;</p>
+
+Eventually I plan to make a chat application either as a chrome extension or chrome app.
