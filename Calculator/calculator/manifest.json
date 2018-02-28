@@ -1,16 +1,15 @@
 {
 	"manifest_version": 2,
-	"name" : "My Cool Extension",
+	"name" : "Calculator",
 	"version" : "0.1",
 	"browser_action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+      "default_popup": "calculator.html"      
     },
 	 "commands": {
       "_execute_browser_action": {
         "suggested_key": {
-          "default": "Ctrl+Shift+F",
-          "mac": "MacCtrl+Shift+F"
+          "default": "Ctrl+Shift+S",
+          "mac": "MacCtrl+Shift+S"
         },
         "description": "Opens hello.html"
       }
