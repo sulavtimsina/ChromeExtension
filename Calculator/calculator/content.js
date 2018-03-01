@@ -1,3 +1,4 @@
+
 var a = 0, b = 0, is_a = true, is_b = false, o = 'nil', answer = 0, first_a = true, first_b = true, is_submission = false, soft_sub = false, display = $('.total');
 function write(x) {
     console.log(x);
@@ -155,7 +156,7 @@ function reset_calc() {
     soft_sub = false;
     display.text(0);
     setDisplayVal(0);
-	$('.last').html('');
+    $('.last').html('');
     write('Calculator Reset');
 }
 function backspace() {
@@ -169,21 +170,21 @@ function backspace() {
     } else {
         write('Nothing Left to Backspace');
     }
-	if(display.text()==0){
-		first_a = true;
-		first_b = true;
-		display.text(0);
-		setDisplayVal(0);
-	}
+    if(display.text()==0){
+        first_a = true;
+        first_b = true;
+        display.text(0);
+        setDisplayVal(0);
+    }
 }
 function newResult(a, o, b, answer){
     var results = $('.history-list');
     var result = '' + '<li class="result"><span class="equation"><span class="a">'+ a +'</span> <span class="o">'+ visOps(o) +'</span> <span class="b">'+ b +'</span></span> = <span class="answer">' + answer + '</span></li>';
     results.prepend(result).children('li').fadeIn(200);
-	if($('.history-list')){
-		var last = $('.history-list li:first-child').find('.equation').html();
-		$('.last').html(last);
-	}
+    if($('.history-list')){
+        var last = $('.history-list li:first-child').find('.equation').html();
+        $('.last').html(last);
+    }
 }
 function sqrt(i) {
     write('Square Root');

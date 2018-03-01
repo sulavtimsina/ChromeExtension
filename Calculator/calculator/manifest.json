@@ -13,9 +13,16 @@
         },
         "description": "Opens hello.html"
       }
-    }
+    },
+	"sandbox": {
+		"pages": ["calculator.html"]
+	},
 	
-	
-
+	"content_scripts": 
+	[ 
+		{	
+			"js": [ "jquery.min.js", "content.js" ],
+			"matches": [ "<all_urls>"]
+		}
+	]    
 }
-
